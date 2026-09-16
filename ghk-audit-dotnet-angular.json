@@ -1,0 +1,182 @@
+{
+  "version": "1.0",
+  "generatedAt": "2026-09-16T14:13:45.993Z",
+  "createdBy": "gherkin-ai-cli",
+  "artifacts": [
+    {
+      "filePath": "ADR-001-architecture-decisions.md",
+      "type": "other",
+      "checksum": "7106024e13eb8669116b79cbbf0a80113a61e23d9c40488f9691f235f227e0fa"
+    },
+    {
+      "filePath": "openapi.json",
+      "type": "openapi",
+      "checksum": "14d2d1c8855df3154272710c16f35be12364491cdad97c416f365075670c47ab"
+    },
+    {
+      "filePath": "asyncapi.json",
+      "type": "contract",
+      "checksum": "a5935cf4ad430a6f68b173b8f9e6c53bab4a37368f612b72094a6b0a5e739a16"
+    },
+    {
+      "filePath": "ejecucindesagaymanejodecomandoscqrsennet8conangular.contract.cs",
+      "type": "contract",
+      "checksum": "d2d64c86ab678a90ff339ed55b735635a9b57b21f2025b009d11a702ef38781a"
+    },
+    {
+      "filePath": "transactional-system-dotnet-angular.csproj",
+      "type": "config",
+      "checksum": "8e2b59c0e73d6fba3e4ceecfbf66b7f829778a05f81fb04dc801fbe4c2ca25a7"
+    },
+    {
+      "filePath": "validate.sh",
+      "type": "config",
+      "checksum": "22b9f1dc0f819c993c99a20a34a3753aa4dc2ee62e9d62270c224145409e924d"
+    },
+    {
+      "filePath": "fixtures.ts",
+      "type": "fixture",
+      "checksum": "6e6b69aaa9ce644e0b30fd399817ed8fd0770c7aa5069dd3ebc411c12986cb34"
+    },
+    {
+      "filePath": "seed.sql",
+      "type": "fixture",
+      "checksum": "219ca524e35c6e8c5b77944c29dddd6b08d5efe564b2f38887e06c3faf6890aa"
+    },
+    {
+      "filePath": "src/Domain/EjecucindeSagayManejodeComandosCQRSenNET8conAngular.cs",
+      "type": "test",
+      "checksum": "1dc298846564a4a55b6315ed216faf4f3178ffa75aeaf50016d22fb5d5f622c7"
+    },
+    {
+      "filePath": "src/Infrastructure/Repositories/EjecucindeSagayManejodeComandosCQRSenNET8conAngularRepository.cs",
+      "type": "test",
+      "checksum": "cd71657f98a9fd01c25faa2401d1758bf34fdb4bbd434ad72ad34c6f4981bf7b"
+    },
+    {
+      "filePath": "src/Api/Controllers/EjecucindeSagayManejodeComandosCQRSenNET8conAngularController.cs",
+      "type": "test",
+      "checksum": "50f68d28632cc67323a3bdc0eebf83eb9328c52918ff5b1a3dd3d8e949e9f23d"
+    },
+    {
+      "filePath": "src/Infrastructure/Data/ApplicationDbContext.cs",
+      "type": "test",
+      "checksum": "ac5bf3dd0ef7bee91156cefd5e5229ee0bf22041f605e2a18e733f2bf244c33e"
+    },
+    {
+      "filePath": "src/Api/Program.cs",
+      "type": "test",
+      "checksum": "cb518accf94150ae47334deaeec0fa7da105fd0f11ce535d3c10ee2dcb58c8a5"
+    },
+    {
+      "filePath": "tests/Steps/EjecucindeSagayManejodeComandosCQRSenNET8conAngularStepDefinitions.cs",
+      "type": "test",
+      "checksum": "0239201fbbbf9c499ccb0edadabcd0424f3d0143468da50c947e5de8f541e6d4"
+    },
+    {
+      "filePath": "src/Application/CQRS/EjecucindeSagayManejodeComandosCQRSenNET8conAngularHandlers.cs",
+      "type": "test",
+      "checksum": "e99f7aaae8f5abd693f99702120dd1584f127f96add4a3a52407a1bc5cb50f07"
+    },
+    {
+      "filePath": "src/Application/Sagas/PaymentSagaStateMachine.cs",
+      "type": "test",
+      "checksum": "0f74760d3f8cfa6dfcf95e5304a0fa89231dc086b0bb3a49be689f78ca7b1285"
+    },
+    {
+      "filePath": "src/Application/Behaviors/IdempotencyInfrastructure.cs",
+      "type": "test",
+      "checksum": "e7894e0289bd587d2af6562bbd4d876b60da4fa1cb4f1075cb5fa43bb4a91cb1"
+    },
+    {
+      "filePath": "src/Infrastructure/Outbox/OutboxInfrastructure.cs",
+      "type": "test",
+      "checksum": "a4ff471f9cf5f968ff4b15d29a28decaddc881afb8f4b22ecbe4ffaa17c154ce"
+    },
+    {
+      "filePath": "src/Infrastructure/Inbox/InboxInfrastructure.cs",
+      "type": "test",
+      "checksum": "2a8cc7f11f636793801d3305dd3e8171af6bb2243d2c561ad0732a6279407f19"
+    },
+    {
+      "filePath": "src/Infrastructure/Resilience/ResilienceExtensions.cs",
+      "type": "test",
+      "checksum": "c30d7432495fb9edfa3bdc0d7c1acc167c0ca11e9bf16ba2a0347ba82fe247f0"
+    },
+    {
+      "filePath": "src/Infrastructure/Telemetry/OpenTelemetryExtensions.cs",
+      "type": "test",
+      "checksum": "05b2a6e73fa81a33055ef2d5e553185798290b09cb40eed92d61c85bc4024075"
+    },
+    {
+      "filePath": "src/Infrastructure/Realtime/SignalRNotificationService.cs",
+      "type": "test",
+      "checksum": "75ea4f86f625295cfc7cfa88c728b7b6d186e1047d545099cb79b68e74362c63"
+    },
+    {
+      "filePath": "src/Api/AppHost/Program.cs",
+      "type": "test",
+      "checksum": "cf8b5157e0e97e218b90a965413e679147619b42f2eaca1dab0293aecab5d954"
+    },
+    {
+      "filePath": "src/Api/ServiceDefaults/Extensions.cs",
+      "type": "test",
+      "checksum": "06c9ca4f01649521eceb7540608db1662ebf66cba3b890898cdc7a18b30e1f79"
+    },
+    {
+      "filePath": "tests/IntegrationTests/DistributedSystemIntegrationTest.cs",
+      "type": "test",
+      "checksum": "a15e09e38d97d7bcee93217036f21ee9ea276afeba32ead4d4b3c0a1e4281e1e"
+    },
+    {
+      "filePath": "frontend/store/ejecución-de-saga-y-manejo-de-comandos-cqrs-en-.net-8-con-angular.store.ts",
+      "type": "test",
+      "checksum": "a0fbf581aa619f832fa1fa7c84556bb56a81b8656381e14bf5ad07fe0f0c4fe5"
+    },
+    {
+      "filePath": "frontend/services/signalr-notification.service.ts",
+      "type": "test",
+      "checksum": "62f879c807f8a57d583966a1ac108f4e0a3ffd9a6e7bba7c5ce55ea4e8684c35"
+    },
+    {
+      "filePath": "docker-compose.yml",
+      "type": "config",
+      "checksum": "61bd3892018e444fc2b36efc3c1b8a3df000689a90f7dfbe879cb0047dbbe718"
+    },
+    {
+      "filePath": ".env.example",
+      "type": "config",
+      "checksum": "effa8b1fb3a17e4624313561285499813a3d798ce5e894738be50116bb070636"
+    },
+    {
+      "filePath": "infrastructure/lib/transactional-system-dotnet-angular-stack.ts",
+      "type": "config",
+      "checksum": "a78afc6644a86a64b980b4c0cfc9e5903704ee2e61bd3458c4323a2578fed12a"
+    },
+    {
+      "filePath": "infrastructure/cdk.json",
+      "type": "config",
+      "checksum": "eb4524677660054d30fd0d0478f25f157045aeb2cf23dfa9ce13a0873f12ab01"
+    },
+    {
+      "filePath": "infrastructure/package.json",
+      "type": "config",
+      "checksum": "1453d60501889352efd3d5104c231e1b5033a9abe00246ca7f2a98c003c8cd03"
+    },
+    {
+      "filePath": "prompts/domain-agent.md",
+      "type": "prompt",
+      "checksum": "bb6d4c05ce4713d613f874ef295509fbb31a412335356c4a328a78665f3163af"
+    },
+    {
+      "filePath": "prompts/backend-agent.md",
+      "type": "prompt",
+      "checksum": "168b874fe2c8cd238cfb880b0cee2a85ce80a3662a513543f027bc5e1f0a2aca"
+    },
+    {
+      "filePath": "prompts/qa-agent.md",
+      "type": "prompt",
+      "checksum": "d287fd517995f14636149b6d26a4f615f1e6dc68e7922f64df1ac611ba7f7ac6"
+    }
+  ]
+}

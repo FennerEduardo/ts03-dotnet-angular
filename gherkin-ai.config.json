@@ -1,0 +1,28 @@
+{
+  "projectName": "transactional-system-dotnet-angular",
+  "architecture": "monolith",
+  "stack": {
+    "language": "csharp",
+    "framework": "aspnet-core",
+    "orm": "entity-framework-core",
+    "database": "mysql",
+    "validation": "fluent-validation",
+    "auth": "jwt-bcrypt",
+    "messaging": "none",
+    "testing": "xunit"
+  },
+  "frontendStack": {
+    "framework": "angular",
+    "language": "javascript",
+    "bundler": "vite",
+    "unitTesting": "vitest",
+    "e2eTesting": "cypress"
+  },
+  "rules": {
+    "bcryptCostFactor": 12,
+    "jwtTtlSeconds": 3600,
+    "strictLayerBoundaries": true,
+    "coverageTarget": 85
+  },
+  "outputDir": "./generated-specs"
+}
