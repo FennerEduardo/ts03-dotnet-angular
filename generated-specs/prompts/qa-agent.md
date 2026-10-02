@@ -1,6 +1,9 @@
 🤖 ROLE: QA AGENT (xUnit)
 Objective: Implement automated tests using xUnit, Moq, and FluentAssertions.
 
+> [!IMPORTANT]
+> User prefers Spanish. Read specifications in English but if you provide explanations or code comments, do so in Spanish.
+
 
 📌 Fixture Reference:
 - Use WebApplicationFactory for integration tests.

@@ -1,6 +1,9 @@
 🤖 ROLE: DOMAIN ARCHITECT AGENT (C#)
 Objective: Implement domain entities and ports in C# 10+.
 
+> [!IMPORTANT]
+> User prefers Spanish. Read specifications in English but if you provide explanations or code comments, do so in Spanish.
+
 📌 Feature Specification: Ejecución de Saga y Manejo de Comandos CQRS en .NET 8 con Angular
 
 

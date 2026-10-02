@@ -9,7 +9,7 @@
     "/api/v1/ejecuci-n-de-saga-y-manejo-de-comandos-cqrs-en--net-8-con-angular": {
       "post": {
         "summary": "POST /api/v1/ejecuci-n-de-saga-y-manejo-de-comandos-cqrs-en--net-8-con-angular",
-        "operationId": "sendEjecucindeSagayManejodeComandosCQRSenNETconAngular",
+        "operationId": "sendEjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngular",
         "security": [],
         "requestBody": {
           "required": true,

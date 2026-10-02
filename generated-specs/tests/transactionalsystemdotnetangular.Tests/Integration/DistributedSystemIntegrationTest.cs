@@ -14,6 +14,8 @@ using Xunit;
 
 namespace transactionalsystemdotnetangular.IntegrationTests
 {
+    // Needs Docker (Testcontainers). Run with: dotnet test --filter Category=Integration
+    [Trait("Category", "Integration")]
     public class DistributedSystemIntegrationTest : IAsyncLifetime
     {
         private readonly PostgreSqlContainer _postgresContainer = new PostgreSqlBuilder()
@@ -51,7 +53,7 @@ namespace transactionalsystemdotnetangular.IntegrationTests
             var command = new { Amount = 250.00m, CustomerId = "cust_123", ReferenceCode = "REF-2026-X" };
 
             // Act
-            var response = await _client.PostAsJsonAsync("/api/v1/ejecucindesagaymanejodecomandoscqrsennet8conangular", command);
+            var response = await _client.PostAsJsonAsync("/api/v1/ejecuciondesagaymanejodecomandoscqrsennet8conangular", command);
 
             // Assert
             Assert.True(response.IsSuccessStatusCode);
@@ -64,13 +66,13 @@ namespace transactionalsystemdotnetangular.IntegrationTests
             var idempotencyKey = Guid.NewGuid().ToString();
             var command = new { Amount = 100.00m, CustomerId = "cust_555" };
             
-            var request1 = new HttpRequestMessage(HttpMethod.Post, "/api/v1/ejecucindesagaymanejodecomandoscqrsennet8conangular")
+            var request1 = new HttpRequestMessage(HttpMethod.Post, "/api/v1/ejecuciondesagaymanejodecomandoscqrsennet8conangular")
             {
                 Content = JsonContent.Create(command)
             };
             request1.Headers.Add("X-Idempotency-Key", idempotencyKey);
 
-            var request2 = new HttpRequestMessage(HttpMethod.Post, "/api/v1/ejecucindesagaymanejodecomandoscqrsennet8conangular")
+            var request2 = new HttpRequestMessage(HttpMethod.Post, "/api/v1/ejecuciondesagaymanejodecomandoscqrsennet8conangular")
             {
                 Content = JsonContent.Create(command)
             };
@@ -92,7 +94,7 @@ namespace transactionalsystemdotnetangular.IntegrationTests
             var invalidCommand = new { Amount = -50.00m, CustomerId = "cust_invalid" };
 
             // Act
-            var response = await _client.PostAsJsonAsync("/api/v1/ejecucindesagaymanejodecomandoscqrsennet8conangular", invalidCommand);
+            var response = await _client.PostAsJsonAsync("/api/v1/ejecuciondesagaymanejodecomandoscqrsennet8conangular", invalidCommand);
 
             // Assert
             Assert.True(response.StatusCode == HttpStatusCode.BadRequest || response.StatusCode == HttpStatusCode.UnprocessableEntity);

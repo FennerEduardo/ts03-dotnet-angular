@@ -1,10 +1,10 @@
 /* ==========================================================================
    Generated Strongly-Typed DDD Contracts & Base Classes
    Feature: Ejecución de Saga y Manejo de Comandos CQRS en .NET 8 con Angular
-   Namespace: transactionalsystemdotnetangular.Domain.EjecucindeSagayManejodeComandosCQRSenNET8conAngular
+   Namespace: transactionalsystemdotnetangular.Domain.EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngular
    ========================================================================== */
 
-namespace transactionalsystemdotnetangular.Domain.EjecucindeSagayManejodeComandosCQRSenNET8conAngular;
+namespace transactionalsystemdotnetangular.Domain.EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngular;
 
 using System;
 using System.Collections.Generic;
@@ -59,19 +59,19 @@ public abstract class ValueObject
 // --------------------------------------------------------------------------
 // 2. Strongly-Typed Domain Event Records
 // --------------------------------------------------------------------------
-public record EjecucindeSagayManejodeComandosCQRSenNET8conAngularProcessedEvent(
+public record EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularProcessedEvent(
     Guid EventId,
     DateTime OccurredOn,
     Guid AggregateId,
     string Details
-) : IDomainEvent { public string EventType => nameof(EjecucindeSagayManejodeComandosCQRSenNET8conAngularProcessedEvent); }
+) : IDomainEvent { public string EventType => nameof(EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularProcessedEvent); }
 
 // --------------------------------------------------------------------------
 // 3. Strongly-Typed Command & Query Records
 // --------------------------------------------------------------------------
 public record CommandResult(bool Success, string Message, Guid? EntityId);
 
-public record CreateEjecucindeSagayManejodeComandosCQRSenNET8conAngularCommand(
+public record CreateEjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularCommand(
     Guid RequestId,
     Guid TenantId,
     DateTime Timestamp,
@@ -79,36 +79,36 @@ public record CreateEjecucindeSagayManejodeComandosCQRSenNET8conAngularCommand(
     decimal Amount
 ) : IRequest<CommandResult>;
 
-public record EjecucindeSagayManejodeComandosCQRSenNET8conAngularReadModel(Guid Id, string ReferenceCode, decimal Amount, string Status, DateTime UpdatedAt);
+public record EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularReadModel(Guid Id, string ReferenceCode, decimal Amount, string Status, DateTime UpdatedAt);
 
-public record GetEjecucindeSagayManejodeComandosCQRSenNET8conAngularQuery(
-    Guid EjecucindeSagayManejodeComandosCQRSenNET8conAngularId,
+public record GetEjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularQuery(
+    Guid EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularId,
     Guid TenantId
-) : IRequest<EjecucindeSagayManejodeComandosCQRSenNET8conAngularReadModel?>;
+) : IRequest<EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularReadModel?>;
 
 // --------------------------------------------------------------------------
 // 4. Strongly-Typed Domain Repository Port
 // --------------------------------------------------------------------------
-public interface IEjecucindeSagayManejodeComandosCQRSenNET8conAngularRepository
+public interface IEjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularRepository
 {
-    Task<EjecucindeSagayManejodeComandosCQRSenNET8conAngularAggregate?> FindByIdAsync(Guid id);
-    Task SaveAsync(EjecucindeSagayManejodeComandosCQRSenNET8conAngularAggregate entity);
+    Task<EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularAggregate?> FindByIdAsync(Guid id);
+    Task SaveAsync(EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularAggregate entity);
     Task DeleteAsync(Guid id);
 }
 
-public class EjecucindeSagayManejodeComandosCQRSenNET8conAngularAggregate : AggregateRoot<Guid>
+public class EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularAggregate : AggregateRoot<Guid>
 {
     public string ReferenceCode { get; private set; } = string.Empty;
     public decimal Amount { get; private set; }
 
-    public EjecucindeSagayManejodeComandosCQRSenNET8conAngularAggregate() { }
+    public EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularAggregate() { }
 
-    public EjecucindeSagayManejodeComandosCQRSenNET8conAngularAggregate(Guid id, string referenceCode, decimal amount)
+    public EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularAggregate(Guid id, string referenceCode, decimal amount)
     {
         Id = id;
         ReferenceCode = referenceCode;
         Amount = amount;
-        ApplyChange(new EjecucindeSagayManejodeComandosCQRSenNET8conAngularProcessedEvent(Guid.NewGuid(), DateTime.UtcNow, Id, $"Created EjecucindeSagayManejodeComandosCQRSenNET8conAngular"));
+        ApplyChange(new EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularProcessedEvent(Guid.NewGuid(), DateTime.UtcNow, Id, $"Created EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngular"));
     }
 }
 

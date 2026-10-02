@@ -8,6 +8,7 @@ public abstract class AggregateRoot<TId>
 {
     public TId Id { get; protected set; } = default!;
     public long Version { get; protected set; }
+    public string TenantId { get; protected set; } = string.Empty;
 }
 
 public abstract class ValueObject
@@ -20,13 +21,14 @@ public interface IRepository<TEntity, TId>
     Task AddAsync(TEntity entity);
 }
 
-public class EjecucindeSagayManejodeComandosCQRSenNET8conAngular : AggregateRoot<Guid>
+public class EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngular : AggregateRoot<Guid>
 {
     public string ReferenceCode { get; private set; } = string.Empty;
 
-    public EjecucindeSagayManejodeComandosCQRSenNET8conAngular(string referenceCode)
+    public EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngular(string referenceCode, string tenantId = "default")
     {
         Id = Guid.NewGuid();
         ReferenceCode = referenceCode;
+        TenantId = tenantId;
     }
 }
