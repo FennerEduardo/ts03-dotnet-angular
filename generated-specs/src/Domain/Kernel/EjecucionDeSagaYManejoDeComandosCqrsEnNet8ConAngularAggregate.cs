@@ -32,6 +32,10 @@ public sealed class EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularAggregat
         Id = id;
     }
 
+    /// <summary>Rebuilds an aggregate from persisted state; no events are recorded.</summary>
+    public static EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularAggregate Restore(string id, string state, long version) =>
+        new(id) { State = state, Version = version };
+
     public string Id { get; }
     public string State { get; private set; } = EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularStates.PENDING;
     public long Version { get; private set; }
