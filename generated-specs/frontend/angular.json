@@ -6,7 +6,7 @@
     "analytics": false
   },
   "projects": {
-    "ejecucion-de-saga-y-manejo-de-comandos-cqrs-en-net8-con-angular-frontend": {
+    "order-processing-frontend": {
       "projectType": "application",
       "root": "",
       "sourceRoot": "src",
@@ -43,7 +43,7 @@
           "options": {
             "tsConfig": "tsconfig.spec.json",
             "runner": "vitest",
-            "buildTarget": "ejecucion-de-saga-y-manejo-de-comandos-cqrs-en-net8-con-angular-frontend:build:development"
+            "buildTarget": "order-processing-frontend:build:development"
           }
         }
       }

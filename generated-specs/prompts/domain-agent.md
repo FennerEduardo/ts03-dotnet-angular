@@ -5,7 +5,9 @@ Objective: Implement domain entities and ports in C# 10+.
 > User prefers Spanish. Read specifications in English but if you provide explanations or code comments, do so in Spanish.
 
 📌 Feature Specification: Ejecución de Saga y Manejo de Comandos CQRS en .NET 8 con Angular
-
+> Como operador de pedidos
+> Quiero procesar un pedido
+> Para ver su estado actualizado en la interfaz
 
 🏗️ Strict Architectural Patterns:
 - Model (Domain/Entity)

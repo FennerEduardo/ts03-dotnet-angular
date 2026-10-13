@@ -6,12 +6,12 @@ using Reqnroll;
 namespace transactionalsystemdotnetangular.Tests.Steps;
 
 [Binding]
-public class EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularStepDefinitions
+public class OrderProcessingStepDefinitions
 {
-    private EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularAggregate _aggregate = new("scenario-aggregate");
+    private OrderProcessingAggregate _aggregate = new("scenario-aggregate");
 
     [BeforeScenario]
-    public void ResetAggregate() => _aggregate = new EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularAggregate("scenario-aggregate");
+    public void ResetAggregate() => _aggregate = new OrderProcessingAggregate("scenario-aggregate");
 
     [Given("un comando \"ProcessOrderCommand\" con GUID de pedido válido")]
     public void given_un_comando_process_order_command_con_guid_de_pedido_valido()

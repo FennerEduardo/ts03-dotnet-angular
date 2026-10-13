@@ -5,7 +5,7 @@ namespace transactionalsystemdotnetangular.Runtime;
 /// <summary>Topic exchange -> consumer queue, which dead-letters rejected messages to a fanout DLX -> DLQ.</summary>
 public sealed record Topology(string Exchange, string Queue, string Dlx, string Dlq)
 {
-    public static readonly Topology Default = new("ejecucion-de-saga-y-manejo-de-comandos-cqrs-en-net8-con-angular.events", "ejecucion-de-saga-y-manejo-de-comandos-cqrs-en-net8-con-angular.consumer", "ejecucion-de-saga-y-manejo-de-comandos-cqrs-en-net8-con-angular.dlx", "ejecucion-de-saga-y-manejo-de-comandos-cqrs-en-net8-con-angular.dlq");
+    public static readonly Topology Default = new("transactional-system-dotnet-angular.events", "transactional-system-dotnet-angular.consumer", "transactional-system-dotnet-angular.dlx", "transactional-system-dotnet-angular.dlq");
 
     public static Topology ForPrefix(string prefix) => new($"{prefix}.events", $"{prefix}.consumer", $"{prefix}.dlx", $"{prefix}.dlq");
 

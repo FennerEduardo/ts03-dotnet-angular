@@ -1,0 +1,10 @@
+{
+  "asyncapi": "2.6.0",
+  "info": {
+    "title": "Ejecución de Saga y Manejo de Comandos CQRS en .NET 8 con Angular AsyncAPI Specification",
+    "version": "1.0.0",
+    "description": "Auto-generated AsyncAPI events for Ejecución de Saga y Manejo de Comandos CQRS en .NET 8 con Angular from Gherkin feature spec."
+  },
+  "defaultContentType": "application/json",
+  "channels": {}
+}

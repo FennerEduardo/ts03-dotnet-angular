@@ -9,10 +9,11 @@ services:
       - .:/app
     working_dir: /app
     environment:
-      - ENVIRONMENT=development
-      - DATABASE_URL=${DATABASE_URL:-mysql://dev_user:dev_password@mysql:5432/transactional-system-dotnet-angular_db}
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:8080
+      - DATABASE_URL=${DATABASE_URL:-mysql://dev_user:dev_password@mysql:3306/transactional-system-dotnet-angular_db}
     ports:
-      - "8000:8000"
+      - "8080:8080"
     depends_on:
       - mysql
 

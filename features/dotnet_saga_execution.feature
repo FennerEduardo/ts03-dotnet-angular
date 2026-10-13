@@ -1,5 +1,9 @@
 # language: es
+@aggregate:OrderProcessing
 Característica: Ejecución de Saga y Manejo de Comandos CQRS en .NET 8 con Angular
+  Como operador de pedidos
+  Quiero procesar un pedido
+  Para ver su estado actualizado en la interfaz
 
   Escenario: Procesamiento Exitoso de Transacción en C# y Visualización en Angular
     Dado un comando "ProcessOrderCommand" con GUID de pedido válido

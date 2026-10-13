@@ -1,9 +1,9 @@
 import { Component, inject, signal } from '@angular/core';
-import { COMMANDS } from './api/ejecucion-de-saga-y-manejo-de-comandos-cqrs-en-net8-con-angular-client';
-import { EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularStore } from './state/ejecucion-de-saga-y-manejo-de-comandos-cqrs-en-net8-con-angular.store';
+import { COMMANDS } from './api/order-processing-client';
+import { OrderProcessingStore } from './state/order-processing.store';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-order-processing-panel',
   standalone: true,
   template: `
     <section aria-label="Ejecución de Saga y Manejo de Comandos CQRS en .NET 8 con Angular">
@@ -26,8 +26,8 @@ import { EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularStore } from './sta
     </section>
   `
 })
-export class EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularPanelComponent {
-  readonly store = inject(EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularStore);
+export class OrderProcessingPanelComponent {
+  readonly store = inject(OrderProcessingStore);
   readonly commands = COMMANDS;
   readonly aggregateId = signal('');
 }

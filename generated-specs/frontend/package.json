@@ -1,5 +1,5 @@
 {
-  "name": "ejecucion-de-saga-y-manejo-de-comandos-cqrs-en-net8-con-angular-frontend",
+  "name": "order-processing-frontend",
   "private": true,
   "version": "0.1.0",
   "scripts": {

@@ -8,7 +8,7 @@ namespace transactionalsystemdotnetangular.Runtime;
 /// </summary>
 public static class Telemetry
 {
-    public static readonly ActivitySource Source = new("ejecucion-de-saga-y-manejo-de-comandos-cqrs-en-net8-con-angular");
+    public static readonly ActivitySource Source = new("order-processing");
 
     /// <summary>Parent context described by an incoming W3C traceparent header (default when absent or invalid).</summary>
     public static ActivityContext ParentFrom(string? traceparent) =>

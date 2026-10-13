@@ -1,16 +1,15 @@
 /* ==========================================================================
    Generated Strongly-Typed DDD Contracts & Base Classes
    Feature: Ejecución de Saga y Manejo de Comandos CQRS en .NET 8 con Angular
-   Namespace: transactionalsystemdotnetangular.Domain.EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngular
+   Namespace: transactionalsystemdotnetangular.Domain.OrderProcessing
    ========================================================================== */
 
-namespace transactionalsystemdotnetangular.Domain.EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngular;
+namespace transactionalsystemdotnetangular.Domain.OrderProcessing;
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MediatR;
 
 // --------------------------------------------------------------------------
 // 1. Core DDD Interfaces & Base Classes
@@ -59,56 +58,56 @@ public abstract class ValueObject
 // --------------------------------------------------------------------------
 // 2. Strongly-Typed Domain Event Records
 // --------------------------------------------------------------------------
-public record EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularProcessedEvent(
+public record OrderProcessingProcessedEvent(
     Guid EventId,
     DateTime OccurredOn,
     Guid AggregateId,
     string Details
-) : IDomainEvent { public string EventType => nameof(EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularProcessedEvent); }
+) : IDomainEvent { public string EventType => nameof(OrderProcessingProcessedEvent); }
 
 // --------------------------------------------------------------------------
 // 3. Strongly-Typed Command & Query Records
 // --------------------------------------------------------------------------
 public record CommandResult(bool Success, string Message, Guid? EntityId);
 
-public record CreateEjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularCommand(
+public record CreateOrderProcessingCommand(
     Guid RequestId,
     Guid TenantId,
     DateTime Timestamp,
     string ReferenceCode,
     decimal Amount
-) : IRequest<CommandResult>;
+);
 
-public record EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularReadModel(Guid Id, string ReferenceCode, decimal Amount, string Status, DateTime UpdatedAt);
+public record OrderProcessingReadModel(Guid Id, string ReferenceCode, decimal Amount, string Status, DateTime UpdatedAt);
 
-public record GetEjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularQuery(
-    Guid EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularId,
+public record GetOrderProcessingQuery(
+    Guid OrderProcessingId,
     Guid TenantId
-) : IRequest<EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularReadModel?>;
+);
 
 // --------------------------------------------------------------------------
 // 4. Strongly-Typed Domain Repository Port
 // --------------------------------------------------------------------------
-public interface IEjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularRepository
+public interface IOrderProcessingRepository
 {
-    Task<EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularAggregate?> FindByIdAsync(Guid id);
-    Task SaveAsync(EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularAggregate entity);
+    Task<OrderProcessingAggregate?> FindByIdAsync(Guid id);
+    Task SaveAsync(OrderProcessingAggregate entity);
     Task DeleteAsync(Guid id);
 }
 
-public class EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularAggregate : AggregateRoot<Guid>
+public class OrderProcessingAggregate : AggregateRoot<Guid>
 {
     public string ReferenceCode { get; private set; } = string.Empty;
     public decimal Amount { get; private set; }
 
-    public EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularAggregate() { }
+    public OrderProcessingAggregate() { }
 
-    public EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularAggregate(Guid id, string referenceCode, decimal amount)
+    public OrderProcessingAggregate(Guid id, string referenceCode, decimal amount)
     {
         Id = id;
         ReferenceCode = referenceCode;
         Amount = amount;
-        ApplyChange(new EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularProcessedEvent(Guid.NewGuid(), DateTime.UtcNow, Id, $"Created EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngular"));
+        ApplyChange(new OrderProcessingProcessedEvent(Guid.NewGuid(), DateTime.UtcNow, Id, $"Created OrderProcessing"));
     }
 }
 

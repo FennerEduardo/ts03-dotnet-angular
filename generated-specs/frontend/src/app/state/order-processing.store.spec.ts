@@ -1,13 +1,13 @@
 import { provideZonelessChangeDetection } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { describe, expect, it, vi, type Mock } from 'vitest';
-import { EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularStore } from './ejecucion-de-saga-y-manejo-de-comandos-cqrs-en-net8-con-angular.store';
-import { EJECUCION_DE_SAGA_Y_MANEJO_DE_COMANDOS_CQRS_EN_NET8_CON_ANGULAR_CLIENT } from '../api/client.token';
+import { OrderProcessingStore } from './order-processing.store';
+import { ORDER_PROCESSING_CLIENT } from '../api/order-processing-client.token';
 
-describe('EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularStore', () => {
+describe('OrderProcessingStore', () => {
   function setup(execute: Mock) {
-    TestBed.configureTestingModule({ providers: [provideZonelessChangeDetection(), { provide: EJECUCION_DE_SAGA_Y_MANEJO_DE_COMANDOS_CQRS_EN_NET8_CON_ANGULAR_CLIENT, useValue: { execute } }] });
-    return TestBed.inject(EjecucionDeSagaYManejoDeComandosCqrsEnNet8ConAngularStore);
+    TestBed.configureTestingModule({ providers: [provideZonelessChangeDetection(), { provide: ORDER_PROCESSING_CLIENT, useValue: { execute } }] });
+    return TestBed.inject(OrderProcessingStore);
   }
 
   it('records the event returned by the backend', async () => {
