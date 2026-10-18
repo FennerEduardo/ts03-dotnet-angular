@@ -6,9 +6,9 @@
     "description": "Auto-generated OpenAPI specification for Ejecución de Saga y Manejo de Comandos CQRS en .NET 8 con Angular from Gherkin feature spec."
   },
   "paths": {
-    "/api/v1/ejecuci-n-de-saga-y-manejo-de-comandos-cqrs-en--net-8-con-angular": {
+    "/api/v1/order-processing": {
       "post": {
-        "summary": "POST /api/v1/ejecuci-n-de-saga-y-manejo-de-comandos-cqrs-en--net-8-con-angular",
+        "summary": "POST /api/v1/order-processing",
         "operationId": "sendOrderProcessing",
         "security": [],
         "requestBody": {

@@ -6,9 +6,9 @@
     "description": "Service API of transactional-system-dotnet-angular, merged from 1 feature contract(s) in contracts/."
   },
   "paths": {
-    "/api/v1/ejecuci-n-de-saga-y-manejo-de-comandos-cqrs-en--net-8-con-angular": {
+    "/api/v1/order-processing": {
       "post": {
-        "summary": "POST /api/v1/ejecuci-n-de-saga-y-manejo-de-comandos-cqrs-en--net-8-con-angular",
+        "summary": "POST /api/v1/order-processing",
         "operationId": "sendOrderProcessing",
         "security": [],
         "requestBody": {
