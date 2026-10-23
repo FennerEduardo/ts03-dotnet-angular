@@ -26,10 +26,3 @@ Objective: Implement automated tests using xUnit, Moq, and FluentAssertions.
    - Application Layer (Use Cases) orchestrates domain entities but does not contain business logic.
    - Infrastructure Layer implements persistence, external APIs, and framework-specific code.
 3. **OUTPUT FORMAT**: You MUST output your response strictly as valid JSON. Do not include markdown codeblocks (like ```json). The JSON must be an object with a "files" array: { "files": [{ "filePath": "...", "content": "..." }] }. Any deviation will cause a pipeline failure.
-
-## [MANDATORY] Step Definitions Dictionary
-You MUST reuse the following existing Step Definitions whenever possible instead of inventing new ones:
-
-- `Then se debe ejecutar el Outbox Interceptor de EF Core en la misma transacción SQL` (found in generated-specs/tests/transactionalsystemdotnetangular.Tests/Steps/OrderProcessingStepDefinitions.cs)
-- `Then el servicio HTTP de Angular 17 debe recibir la respuesta mapeada a un Signal `orderSignal`` (found in generated-specs/tests/transactionalsystemdotnetangular.Tests/Steps/OrderProcessingStepDefinitions.cs)
-- `Then el componente Angular Standalone debe actualizar la vista de la UI inmediatamente` (found in generated-specs/tests/transactionalsystemdotnetangular.Tests/Steps/OrderProcessingStepDefinitions.cs)
