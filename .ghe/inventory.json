@@ -1,0 +1,447 @@
+{
+  "version": "2",
+  "cliVersion": "3.2.1",
+  "features": {
+    "features/dotnet_saga_execution.feature": {
+      "checksum": "607a9465950b57bfb6ec8acbe151354db67c13a733e3b175cfff4f117104aee7",
+      "contracts": {
+        "contracts/dotnet-saga-execution/ADR-OrderProcessing.md": "7106024e13eb8669116b79cbbf0a80113a61e23d9c40488f9691f235f227e0fa",
+        "contracts/dotnet-saga-execution/openapi.json": "1dee1212b3a8e480d2d827831978f4f01516eeb609cb41a3295bb72158cf2273",
+        "openapi.json": "6fd61d976a6466abed11b3b850cfaa242279ecca0b98c7923aa2226854f76adb",
+        "contracts/dotnet-saga-execution/asyncapi.json": "a5935cf4ad430a6f68b173b8f9e6c53bab4a37368f612b72094a6b0a5e739a16",
+        "asyncapi.json": "e45ebf53b9637676605923326768671ea652745919cfa15ec228729097c8382c",
+        "orderprocessing.contract.cs": "b2c162998b419332276f84f70d3e7eb879703d68a4a04c2ec2481ad47e295b32"
+      }
+    }
+  },
+  "artifacts": [
+    {
+      "filePath": ".dockerignore",
+      "type": "test",
+      "checksum": "81525389c36dc1fd779b3b4b16a2a874239910c8585e3fc7207d34ff32dc40ff",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": ".env.example",
+      "type": "config",
+      "checksum": "8d64c3db798ff966b1bc8d6dfa1176b1c92b1e8aacdba27322f81dba9f4f6f75",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "ADR-001-architecture-decisions.md",
+      "type": "other",
+      "checksum": "7106024e13eb8669116b79cbbf0a80113a61e23d9c40488f9691f235f227e0fa",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "asyncapi.json",
+      "type": "contract",
+      "checksum": "e45ebf53b9637676605923326768671ea652745919cfa15ec228729097c8382c",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "contracts/dotnet-saga-execution/ADR-OrderProcessing.md",
+      "type": "other",
+      "checksum": "7106024e13eb8669116b79cbbf0a80113a61e23d9c40488f9691f235f227e0fa",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "contracts/dotnet-saga-execution/asyncapi.json",
+      "type": "contract",
+      "checksum": "a5935cf4ad430a6f68b173b8f9e6c53bab4a37368f612b72094a6b0a5e739a16",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "contracts/dotnet-saga-execution/openapi.json",
+      "type": "openapi",
+      "checksum": "1dee1212b3a8e480d2d827831978f4f01516eeb609cb41a3295bb72158cf2273",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "docker-compose.yml",
+      "type": "config",
+      "checksum": "af55c91b92c5ac025d931021adb7799bc0079b90212515204c7857c61ecb46ce",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "Dockerfile",
+      "type": "test",
+      "checksum": "6ec3baaf70fd3f8bd64d3fcba272c6f1ea5312dab2c31479f0411c44048b52ff",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "features/dotnet_saga_execution.feature",
+      "type": "other",
+      "checksum": "607a9465950b57bfb6ec8acbe151354db67c13a733e3b175cfff4f117104aee7",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "fixtures.ts",
+      "type": "fixture",
+      "checksum": "b19e39d16ed041b072213b2c0465f27adf5f702f3621d6b62df3ff2ce1ccbd9d",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "frontend/angular.json",
+      "type": "test",
+      "checksum": "bf5b5dc31fe49d4c439c70094576a138db83fe3d742eefa7b433a0e1076aa835",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "frontend/package.json",
+      "type": "test",
+      "checksum": "50392af24ba360355a7dc6ce60a1c73ccf714112e227cc21e6338b502f7f220a",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "frontend/src/app/api/order-processing-client.spec.ts",
+      "type": "test",
+      "checksum": "bb151b935aebced3908962931c4d9da0a1fe7f84157c8ab4e7f478afa3bbef9b",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "frontend/src/app/api/order-processing-client.token.ts",
+      "type": "test",
+      "checksum": "d24f9271683719a99a3a2121e598b827b4517d38c9e9aadd6781fe8bd49277c3",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "frontend/src/app/api/order-processing-client.ts",
+      "type": "test",
+      "checksum": "fcdb2399420adf3e554ce34bb1eb5f8ceb2586ea46afd000ff5b4af1e5c7c849",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "frontend/src/app/app.component.ts",
+      "type": "test",
+      "checksum": "cc309b1694ce46603cb06bbe02a9cd578e9300d76b155de3285350cc15cc5969",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "frontend/src/app/order-processing-panel.component.spec.ts",
+      "type": "test",
+      "checksum": "8cbe1e238165d9a95a74547f4695737fbcdeb7277236a8da368d954aac8c37c3",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "frontend/src/app/order-processing-panel.component.ts",
+      "type": "test",
+      "checksum": "cc63c76733e98c202dc22d5b19a3aa9bec4f17f7f52322bdfa651192f0c323f6",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "frontend/src/app/realtime/realtime.service.ts",
+      "type": "test",
+      "checksum": "945695cca1b2e35d993e0e1676b08eb935be3b462bd4da402e4648f277b00bcf",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "frontend/src/app/state/order-processing.store.spec.ts",
+      "type": "test",
+      "checksum": "9ac41d3a61e0aab3d92242755e987a9d070aa326d951d83e8a2e5846d1b01fc9",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "frontend/src/app/state/order-processing.store.ts",
+      "type": "test",
+      "checksum": "e82301a8d236d8471149c8190c268bd6d2c7ed5c21cfb801e6bf1269de255f2c",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "frontend/src/index.html",
+      "type": "test",
+      "checksum": "40e31c9aa6338de766dee047767815edc5923ae6c64f70a251f3834a99ff8dec",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "frontend/src/main.ts",
+      "type": "test",
+      "checksum": "e332004696e0b4186ae433e8c614278b375baaaf94c4c223a92a1b9a60489c2c",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "frontend/tsconfig.app.json",
+      "type": "test",
+      "checksum": "8a132c140adadb1e7d88ba5e39601e527fa23159ad62f8d2c9b60490bedd7a03",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "frontend/tsconfig.json",
+      "type": "test",
+      "checksum": "9589b3a1bb2b00140de9a6acfcaf360755afa7b28fe7d81fca55504bb70d7602",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "frontend/tsconfig.spec.json",
+      "type": "test",
+      "checksum": "f1115372f31fb52fbf9b3d0d386365c06abfa729184ac8fbc3d8cc58b220ca0a",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "openapi.json",
+      "type": "openapi",
+      "checksum": "6fd61d976a6466abed11b3b850cfaa242279ecca0b98c7923aa2226854f76adb",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "orderprocessing.contract.cs",
+      "type": "contract",
+      "checksum": "b2c162998b419332276f84f70d3e7eb879703d68a4a04c2ec2481ad47e295b32",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "prompts/backend-agent.md",
+      "type": "prompt",
+      "checksum": "487a5c8ff18e4fbb7e79a94e0f9b2fa1bb4df52c38e4e565fe20dff368fe2ed7",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "prompts/domain-agent.md",
+      "type": "prompt",
+      "checksum": "9b8ca4b3a439074d4f352f557cc9fc840773b4a9e7eb14e019cdcf2dfef1eebf",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "prompts/qa-agent.md",
+      "type": "prompt",
+      "checksum": "a4d6b7616167c7c6ac4c337c550753f279be427d26271a8f128e7c9e8badb3c0",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "seed.sql",
+      "type": "fixture",
+      "checksum": "8449403450424c303599b9e35d1c1bfe2990afc6e9812c174377e29ed356ec54",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "src/Api/AppHost/Program.cs",
+      "type": "test",
+      "checksum": "cf8b5157e0e97e218b90a965413e679147619b42f2eaca1dab0293aecab5d954",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "src/Api/Auth/JwtTenant.cs",
+      "type": "test",
+      "checksum": "fa3f2da2527849ec06204f5ea8ae80e851dbc849b34ef333215afe632841eb56",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "src/Api/OrderProcessingEndpoints.cs",
+      "type": "test",
+      "checksum": "590672d7125a6497e2f844da3ec5128312b8d5ae7b9f8c2037209c330fae6b64",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "src/Api/Program.cs",
+      "type": "test",
+      "checksum": "e1a95a7f66fc67927576c60062fed2f6bfc6072dd2a5a8932600b2114a9b86a5",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "src/Api/ServiceDefaults/Extensions.cs",
+      "type": "test",
+      "checksum": "06c9ca4f01649521eceb7540608db1662ebf66cba3b890898cdc7a18b30e1f79",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "src/Api/Workers/OutboxRelayWorker.cs",
+      "type": "test",
+      "checksum": "de60b0b665bf43262fcf5c65e6435d751e696a005ed8f4d848bbaa301d16daec",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "src/Domain/Kernel/DomainValidationException.cs",
+      "type": "test",
+      "checksum": "ee99fb404287b5b104b52f9c66929cc30f13609f4dbfc58c196e5b7191368e5d",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "src/Domain/Kernel/OrderProcessingAggregate.cs",
+      "type": "test",
+      "checksum": "b90a0892828874c7acce516a00d4d11137fcf7fe8902cc8fbfe55987d0f8dad0",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "src/Infrastructure/Realtime/SignalRNotificationService.cs",
+      "type": "test",
+      "checksum": "75ea4f86f625295cfc7cfa88c728b7b6d186e1047d545099cb79b68e74362c63",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "src/Infrastructure/Resilience/ResilienceExtensions.cs",
+      "type": "test",
+      "checksum": "c30d7432495fb9edfa3bdc0d7c1acc167c0ca11e9bf16ba2a0347ba82fe247f0",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "src/Infrastructure/Telemetry/OpenTelemetryExtensions.cs",
+      "type": "test",
+      "checksum": "5005aa55957844fe9a5164569c73a01f558d8a60ad63776ca9a4b6afdda180f1",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "src/Runtime/Brokers.cs",
+      "type": "test",
+      "checksum": "c81a353a74b0ae3e546c165e7acf8469820475afbca0ed84fbaf3e7933f230c7",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "src/Runtime/CommandService.cs",
+      "type": "test",
+      "checksum": "0d16ecb51d8f502333a63c34bf552db157b37490aaba04f9dca35f375ca45b9f",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "src/Runtime/Connections.cs",
+      "type": "test",
+      "checksum": "0f1e0ee64b09dacbfbdb1a7cb53cbe8db9f798db7f34dbc393855e9261a8e372",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "src/Runtime/InboxConsumer.cs",
+      "type": "test",
+      "checksum": "d305cd9257806656dcec278a4ca49f76d749e78f84be207358985fdf0ef026c6",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "src/Runtime/OutboxRelay.cs",
+      "type": "test",
+      "checksum": "ec364eff2041b0e4e7f4750933fe783fdc208cd918dfe52234c1e99caa5065a6",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "src/Runtime/SagaOrchestrator.cs",
+      "type": "test",
+      "checksum": "98f33afe31cc4821da29fc56125daa016a96af502369441756de2b4680e15a13",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "src/Runtime/Schema.cs",
+      "type": "test",
+      "checksum": "f0c321d2d76b19985810a0828a1fb6212826ed0b379ff97151d44fc4a38ebd5c",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "src/Runtime/Telemetry.cs",
+      "type": "test",
+      "checksum": "2168584ac952165f16363e02b34c55f60e8914de5998b2a9cf18f2a0e487de7a",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "src/Runtime/Topology.cs",
+      "type": "test",
+      "checksum": "ac3a3309b84c5090fc207bf466586b5197a3cfa17d1e4e75fcb4fd385a4dfce1",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "tests/transactionalsystemdotnetangular.Tests/Api/OrderProcessingHttpTests.cs",
+      "type": "test",
+      "checksum": "782405f7406f976de4c1b382438244ba129b2ae7a287a46c39c01c60c2880105",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "tests/transactionalsystemdotnetangular.Tests/Domain/OrderProcessingAggregateTests.cs",
+      "type": "test",
+      "checksum": "f3d3ccb1804d159e4890a43543f308f3274a9c6561e352ac1b47bd9a33f06574",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "tests/transactionalsystemdotnetangular.Tests/reqnroll.json",
+      "type": "test",
+      "checksum": "cf42817fa5fb5cac3e6b328ea2211a1658502eaf4ac33749ac1c445340e93a19",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "tests/transactionalsystemdotnetangular.Tests/Runtime/RuntimeIntegrationTests.cs",
+      "type": "test",
+      "checksum": "38f1bb43560d434cd315e200b95a7159b7088f4ca1af380e43fad65d77d3cb17",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "tests/transactionalsystemdotnetangular.Tests/Steps/OrderProcessingStepDefinitions.cs",
+      "type": "test",
+      "checksum": "0bc48d2f9b1a4f69c78f56b2289936c5b0a8cd28718ee326c83304a6af711bb7",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "tests/transactionalsystemdotnetangular.Tests/transactionalsystemdotnetangular.Tests.csproj",
+      "type": "test",
+      "checksum": "0f05a3b3381a179d40b8e1be0bd13c624a0cf918afea8bb98a3b738b679c80a4",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "transactional-system-dotnet-angular.csproj",
+      "type": "config",
+      "checksum": "992dc9106700e4f7d0265e0dad07362b42766630b6ebac3479620dd2edf6599c",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    },
+    {
+      "filePath": "validate.sh",
+      "type": "config",
+      "checksum": "c80ad713438a9e005581a604f2fff6a8ee494e354f9b520dccb720d8485e03df",
+      "feature": "features/dotnet_saga_execution.feature",
+      "generatedAt": "2026-10-25T05:07:46.180Z"
+    }
+  ],
+  "executions": []
+}

@@ -6,15 +6,13 @@
 
 export interface OrderProcessingFixture {
   id: string;
-  comando: string;
-  handler: string;
+
 }
 
 export function createOrderProcessingFixture(): OrderProcessingFixture {
   return {
     id: 'f47ac10b-58cc-4372-a567-0e02b2c3d479',
-    comando: 'test_value',
-    handler: 'test_value',
+
   };
 }
 
