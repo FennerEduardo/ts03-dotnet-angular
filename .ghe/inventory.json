@@ -1,6 +1,6 @@
 {
   "version": "2",
-  "cliVersion": "3.2.1",
+  "cliVersion": "3.2.2",
   "features": {
     "features/dotnet_saga_execution.feature": {
       "checksum": "607a9465950b57bfb6ec8acbe151354db67c13a733e3b175cfff4f117104aee7",
@@ -95,16 +95,16 @@
     {
       "filePath": "frontend/angular.json",
       "type": "test",
-      "checksum": "bf5b5dc31fe49d4c439c70094576a138db83fe3d742eefa7b433a0e1076aa835",
+      "checksum": "0a9fef4e0af6022ac515da4f688dda12e3de95e41b6cb7bac02f05cfc61e1835",
       "feature": "features/dotnet_saga_execution.feature",
-      "generatedAt": "2026-10-25T05:07:46.180Z"
+      "generatedAt": "2026-10-30T20:47:57.550Z"
     },
     {
       "filePath": "frontend/package.json",
       "type": "test",
-      "checksum": "50392af24ba360355a7dc6ce60a1c73ccf714112e227cc21e6338b502f7f220a",
+      "checksum": "23c1db611ce19353f35d91aa543ea2e08e07fc8a47296e4acb4c879b16c28bfa",
       "feature": "features/dotnet_saga_execution.feature",
-      "generatedAt": "2026-10-25T05:07:46.180Z"
+      "generatedAt": "2026-10-30T20:47:57.550Z"
     },
     {
       "filePath": "frontend/src/app/api/order-processing-client.spec.ts",
